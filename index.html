@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OICPP-SampleTester 预览版</title>
+    <link rel="icon" type="image/x-icon" href="https://oicpp.mywwzh.top/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans','Liberation Sans',sans-serif; }
+        .platform-card { transition: box-shadow .25s, transform .25s; }
+        .platform-card:hover { box-shadow:0 20px 35px -10px rgba(0,0,0,.2); transform:translateY(-4px); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://oicpp.mywwzh.top/oicpp.png" alt="logo" class="w-8 h-8 rounded">
+                <span class="text-xl font-semibold">OICPP-SampleTester</span>
+            </a>
+            <a href="https://oicpp.mywwzh.top/download" class="text-sm text-blue-600 hover:underline"><i class="fas fa-arrow-left mr-1"></i>返回正式发布页</a>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-14">
+        <div class="max-w-5xl mx-auto px-6">
+            <h1 class="text-4xl font-bold mb-4">预览版下载</h1>
+            <p class="text-lg opacity-90">获取 OICPP-SampleTester 混淆后的预览版本</p>
+            <div class="mt-4 text-sm space-x-4">
+                <span class="inline-flex items-center bg-white/15 rounded px-3 py-1"><i class="fas fa-flask mr-2"></i>版本: 1.0.3-beta1</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-14 space-y-16">
+        <section>
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-puzzle-piece text-indigo-600 mr-2"></i>浏览器样例抓取插件 (Tampermonkey 脚本)</h2>
+            <div class="col-span-full text-gray-700 text-sm bg-yellow-50 border border-yellow-100 rounded p-4">
+                <strong class="text-yellow-800">注意：</strong> 这是一个混淆后的预览版本，可能包含未完成的功能或潜在的错误。仅供测试和预览使用。
+            </div>
+            <div class="grid gap-6 md:grid-cols-1 lg:grid-cols-1">
+                <div class="platform-card bg-white rounded-xl border border-gray-200 p-6 flex flex-col">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4"><i class="fas fa-code text-blue-600 text-xl"></i></div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Tampermonkey 脚本 (混淆版)</h3>
+                            <p class="text-xs text-gray-500 mt-1">版本: 1.0.3-beta1</p>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 flex-1 mb-4">适用于安装了 Tampermonkey 的浏览器，提供 OICPP IDE 集成功能。</div>
+                    <a href="https://static.mr-onion-blog.fun/oicpp/OICPP-SampleTester.preview.user.js" target="_blank" class="w-full py-2.5 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-700 flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>安装预览版脚本
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4 text-xs text-gray-500">安装前请确保您已安装 <a class="text-blue-600 underline" href="https://www.tampermonkey.net/" target="_blank">Tampermonkey（油猴）</a> 或类似的浏览器扩展。</p>
+            <p class="mt-4 text-xs text-gray-500">本脚本根据 <a class="text-blue-600 underline" href="https://www.gnu.org/licenses/gpl-3.0.html#license-text" target="_blank">GNU GPL v3 协议</a> 发布。</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-sm py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+            <div>© 2025 OICPP SampleTester. 本项目根据 GNU GPL v3 协议发布.</div>
+        </div>
+    </footer>
+</body>
+</html>
